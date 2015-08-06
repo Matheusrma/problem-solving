@@ -21,42 +21,18 @@ class Tests(unittest.TestCase):
     self.testSubject = ProblemSolver()
 
   def testExample1(self):
-    self.assertEqual(self.testSubject.run([1,10]), [2,3,5,7])  
-
-  def testExample2(self):
-    self.assertEqual(self.testSubject.run([3,5]), [3,5])  
+    self.assertEqual(self.testSubject.run(['1010110010', '10110']), [1])  
   
-  def testSamePrime(self):
-    self.assertEqual(self.testSubject.run([17,17]), [17])  
-
+  def testExample2(self):
+    self.assertEqual(self.testSubject.run(['1110111011', '10011']), [0])  
+    
 class ProblemSolver():
 
-  def isPrime(self, num):
-    if num == 1:
-      return False
-
-    for i in range(2, num):
-      # There are no divisors after the square root of a given number
-      if i > sqrt(num):
-        break
-
-      if num % i == 0:
-        return False
-
-    return True
-
   def run(self, input):
-    
-    solution = []
-
-    start = input[0]
-    end   = input[1]
-
-    for i in range(start, end + 1):
-      if self.isPrime(i):
-        solution.append(i);
-
-    return solution
+    if input[0].find(input[1]) != -1:
+      return [1]
+    else:
+      return [0]
 
 # MAIN
 
@@ -67,11 +43,11 @@ def runTests():
 if len(sys.argv) > 1 and sys.argv[1] == 'test':
   runTests();
 else:
-  reader  = Reader(hasTestCount = True);
+  reader  = Reader(hasTestCount = False);
   solver  = ProblemSolver();
-  printer = Printer(hasLineBetweenPrints = True);
+  printer = Printer(hasLineBetweenPrints = False);
 
-  inputArray = reader.readIntegersFromConsole()
+  inputArray = reader.readFromConsole()
 
   while inputArray != []:
     solution = solver.run(inputArray)

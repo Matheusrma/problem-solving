@@ -7,7 +7,7 @@ class Printer():
   """Responsible for printing to console    
   """
 
-  def __init__(self, hasLineBetweenPrints = True):
+  def __init__(self, hasLineBetweenPrints):
     self.hasLineBetweenPrints = hasLineBetweenPrints
 
   def printToConsole(self, array):

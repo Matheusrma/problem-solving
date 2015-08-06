@@ -50,11 +50,11 @@ def runTests():
 if len(sys.argv) > 1 and sys.argv[1] == 'test':
   runTests();
 else:
-  reader  = Reader(False);
+  reader  = Reader(hasTestCount = False);
   solver  = ProblemSolver();
-  printer = Printer(False);
+  printer = Printer(hasLineBetweenPrints = False);
 
-  inputArray = reader.readFromConsole()
+  inputArray = reader.readIntegersFromConsole()
 
   while inputArray != []:
     solution = solver.run(inputArray)
