@@ -4,8 +4,16 @@
 
 # -*- coding: UTF-8 -*-
 
-import unittest
 import sys
+
+# Adds problem-solving folder to module searching path 
+# to enable code modularization
+sys.path.append('../../')
+
+import unittest
+from math import sqrt
+from util.python.printer import Printer
+from util.python.reader import Reader
 
 class Tests(unittest.TestCase):
 
@@ -33,6 +41,8 @@ class ProblemSolver():
 
     return solution
 
+# MAIN
+
 def runTests():
   suite = unittest.TestLoader().loadTestsFromTestCase(Tests)
   unittest.TextTestRunner(verbosity = 2).run(suite)
@@ -40,7 +50,17 @@ def runTests():
 if len(sys.argv) > 1 and sys.argv[1] == 'test':
   runTests();
 else:
-  
+  reader  = Reader(False);
+  solver  = ProblemSolver();
+  printer = Printer(False);
 
+  inputArray = reader.readFromConsole()
+
+  while inputArray != []:
+    solution = solver.run(inputArray)
+    if (solution == []):
+      break
+    printer.printToConsole(solution)
+    inputArray = reader.readFromConsole()
 
 

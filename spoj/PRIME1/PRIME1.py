@@ -36,8 +36,7 @@ class ProblemSolver():
       return False
 
     for i in range(2, num):
-      # There are no divisors after the 
-      # square root of a given number
+      # There are no divisors after the square root of a given number
       if i > sqrt(num):
         break
 
