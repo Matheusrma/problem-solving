@@ -5,15 +5,16 @@
 # -*- coding: UTF-8 -*-
 
 import sys
+import unittest
 
 # Adds problem-solving folder to module searching path 
 # to enable code modularization
 sys.path.append('../../')
 
-import unittest
-from math import sqrt
 from util.python.printer import Printer
 from util.python.reader import Reader
+
+from math import sqrt
 
 class Tests(unittest.TestCase):
 

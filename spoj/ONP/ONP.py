@@ -1,5 +1,5 @@
 # SPOJ Classical Problems 
-# Url:    http://www.spoj.com/problems/SBSTR1/
+# Url:    http://www.spoj.com/problems/ONP/
 # Author: matheusrma
 
 # -*- coding: UTF-8 -*-
@@ -20,18 +20,13 @@ class Tests(unittest.TestCase):
     self.testSubject = ProblemSolver()
 
   def testExample1(self):
-    self.assertEqual(self.testSubject.run(['1010110010', '10110']), [1])  
-  
-  def testExample2(self):
-    self.assertEqual(self.testSubject.run(['1110111011', '10011']), [0])  
+    self.assertEqual(self.testSubject.run(['(a+(b*c))']), ['abc*+'])  
 
 class ProblemSolver():
 
   def run(self, input):
-    if input[0].find(input[1]) != -1:
-      return [1]
-    else:
-      return [0]
+    
+    return input
 
 # MAIN
 
@@ -42,11 +37,11 @@ def runTests():
 if len(sys.argv) > 1 and sys.argv[1] == 'test':
   runTests();
 else:
-  reader  = Reader(hasTestCount = False);
+  reader  = Reader(hasTestCount = True);
   solver  = ProblemSolver();
   printer = Printer(hasLineBetweenPrints = False);
 
-  inputArray = reader.readFromConsole()
+  inputArray = reader.readIntegersFromConsole()
 
   while inputArray != []:
     solution = solver.run(inputArray)

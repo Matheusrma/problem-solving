@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"inpu",
+				"inputArray"
+			],
+			[
+				"inp",
+				"inputArray"
+			],
+			[
+				"test",
+				"testCount"
+			],
+			[
 				"row",
 				"rows"
 			],
@@ -31,6 +43,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "spoj/ONP/ONP.py",
+			"settings":
+			{
+				"buffer_size": 1121,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spoj/SBSTR1/SBSTR1.py",
+			"settings":
+			{
+				"buffer_size": 1285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spoj/PRIME1/PRIME1.py",
+			"settings":
+			{
+				"buffer_size": 1733,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -64,10 +100,29 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/matheusrma/projects/problem-solving"
+		"/Users/matheusrma/projects/problem-solving/spoj",
+		"/Users/matheusrma/projects/problem-solving/spoj/ONP",
+		"/Users/matheusrma/projects/problem-solving/spoj/PRIME1",
+		"/Users/matheusrma/projects/problem-solving/spoj/SBSTR1",
+		"/Users/matheusrma/projects/problem-solving/util",
+		"/Users/matheusrma/projects/problem-solving/util/python"
 	],
 	"file_history":
 	[
+		"/Users/matheusrma/Desktop/test.html",
+		"/Users/matheusrma/projects/problem-solving/spoj/SBSTR1/SBSTR1.in",
+		"/Users/matheusrma/projects/problem-solving/spoj/PRIME1/PRIME1.py",
+		"/Users/matheusrma/projects/problem-solving/util/python/reader.py",
+		"/Users/matheusrma/projects/problem-solving/spoj/TEST/TEST.py",
+		"/Users/matheusrma/projects/problem-solving/spoj/SBSTR1/SBSTR1.py",
+		"/Users/matheusrma/projects/problem-solving/util/python/printer.py",
+		"/Users/matheusrma/projects/problem-solving/spoj/TEST/TEST.in",
+		"/Users/matheusrma/projects/problem-solving/util/__init__.py",
+		"/Users/matheusrma/projects/problem-solving/spoj/PRIME1/PRIME1.in",
+		"/Users/matheusrma/projects/problem-solving/spoj/PRIME1/__init__.py",
+		"/Users/matheusrma/projects/problem-solving/util/python/__init__.py",
+		"/Users/matheusrma/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/matheusrma/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/matheusrma/Downloads/DCM Script",
 		"/Users/matheusrma/Downloads/main (1).js",
 		"/Users/matheusrma/projects/watchDog/watchDog/main.js",
@@ -76,19 +131,17 @@
 		"/Users/matheusrma/projects/paty/t.java",
 		"/Users/matheusrma/Downloads/alwaysmodify.user.js",
 		"/Users/matheusrma/projects/Model Thinking notes.txt",
-		"/Users/matheusrma/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/matheusrma/projects/code-art/grid-art.py",
-		"/Users/matheusrma/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/matheusrma/projects/code-art/grid.py",
 		"/Users/matheusrma/Google Drive/Projects/_In Progress/[Platforms Scale Lab] Creative Alerts/emailTemplate.html"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 		]
@@ -98,6 +151,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tabs",
 			"Q:",
 			"<h"
 		],
@@ -117,8 +171,99 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "spoj/ONP/ONP.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								260,
+								260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "spoj/SBSTR1/SBSTR1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spoj/PRIME1/PRIME1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -128,7 +273,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

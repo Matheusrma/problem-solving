@@ -27,6 +27,9 @@ class Reader():
       return [];
 
   def readFromConsole(self):
+    """ Will read a single line and return strings in an array
+    """
+
     try:
       line       = raw_input()
       inputArray = line.split(' ')
